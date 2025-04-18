@@ -24,6 +24,10 @@ const pool = new Pool({
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('API de asistencia funcionando correctamente');
+});
+
 app.post('/confirmAsistencia', async (req, res) => {
     /** Objeto recibido:
      * name: "",
