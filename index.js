@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: '*', // Permitir todas las solicitudes de origen cruzado
+    origin: 'https://baby-shower-peach.vercel.app', // Permitir todas las solicitudes de origen cruzado
     methods: ['GET', 'POST'], // Métodos permitidos
     allowedHeaders: ['Content-Type', 'Authorization'] // Encabezados permitidos
 }));
